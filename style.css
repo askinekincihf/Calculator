@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./img/matrix_numbers_green.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container>* {
+    border: 2px solid #f08c00;
+    background-color: #faeaec;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 400px;
+    margin: 8vh auto;
+    font: 1.2em Helvetica, arial, sans-serif;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+    filter: drop-shadow(2px 2px pink);
+
+}
+
+.inputs {
+    grid-column: 1/-1;
+    grid-row: 1/3;
+}
+
+#ac {
+    grid-column: 1/3;
+}
+
+#equal {
+    grid-column: 3/-1;
+}
